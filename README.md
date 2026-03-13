@@ -97,7 +97,6 @@ MeetInsight/
 ├── README.md                # Project documentation
 │
 └── venv/                    # Python virtual environment (not pushed to GitHub)
-------------------------------------------------------------------------
 
 # Setup Instructions
 
