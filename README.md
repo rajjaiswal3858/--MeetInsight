@@ -81,34 +81,23 @@ FFmpeg
 
 ------------------------------------------------------------------------
 
-# Project Structure
+## Project Structure
 
-    meetinsight/
+    MeetInsight/
     │
-    ├── app.py
+    ├── frontend/              # Frontend interface (HTML, CSS, JavaScript)
     │
-    ├── audio/
-    │   └── audio_processing.py
+    ├── 1.py                   # Main FastAPI backend application
     │
-    ├── transcription/
-    │   └── whisper_transcriber.py
+    ├── requirements.txt       # Python dependencies
     │
-    ├── embeddings/
-    │   └── embedding_generator.py
+    ├── .env                   # Environment variables (API keys, Supabase config)
     │
-    ├── retrieval/
-    │   ├── vector_search.py
-    │   └── reranker.py
+    ├── .gitignore             # Files ignored by Git (venv, cache, etc.)
     │
-    ├── database/
-    │   └── supabase_client.py
+    ├── README.md              # Project documentation
     │
-    ├── llm/
-    │   └── openrouter_client.py
-    │
-    ├── requirements.txt
-    ├── .env.example
-    └── README.md
+    └── venv/                  # Python virtual environment (not pushed to GitHub)
 
 ------------------------------------------------------------------------
 
