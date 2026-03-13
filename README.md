@@ -82,7 +82,6 @@ FFmpeg
 ------------------------------------------------------------------------
 
 ## Project Structure
-## 📁 Project Structure
 
 MeetInsight/
 │
