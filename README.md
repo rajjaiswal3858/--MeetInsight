@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# MeetInsight -- AI Meeting Assistant
+# MeetInsight --- AI Meeting Assistant
 
 MeetInsight is an AI-powered meeting assistant that processes meeting
 audio, converts it into structured text, generates semantic embeddings,
