@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Meeting AI Assistant</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Meeting Recorder</h2>
+
+<button onclick="startRecording()">Start Recording</button>
+<button onclick="stopRecording()">Stop Recording</button>
+<button class="darkToggle" onclick="toggleDark()">🌙 Dark Mode</button>
+
+<div id="recording" class="recording">
+<div class="dot"></div>
+Recording...
+</div>
+
+<p id="status"></p>
+
+<audio id="player" controls></audio>
+
+<hr>
+
+<h3>Ask About Meeting</h3>
+
+<div id="chatbox"></div>
+<input id="question" placeholder="Ask meeting question...">
+
+<button onclick="askQuestion()">Ask</button>
+<button onclick="clearMeeting()">Clear</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
