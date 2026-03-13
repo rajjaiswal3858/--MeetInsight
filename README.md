@@ -17,4 +17,59 @@ This project is an AI backend that processes meeting audio and allows question a
 - Supabase
 - OpenRouter / OpenAI
 - Python
+- HTML
+- CSS
+- JavaScript
 
+
+## Run the Project
+
+Follow these steps to run the project locally.
+
+1. Clone the repository
+
+git clone https://github.com/your-username/ai-meeting-assistant.git
+cd ai-meeting-assistant
+
+2. Create a virtual environment
+
+python -m venv venv
+
+3. Activate the virtual environment
+
+Windows:
+venv\Scripts\activate
+
+Mac/Linux:
+source venv/bin/activate
+
+4. Install the required dependencies
+
+pip install -r requirements.txt
+
+5. Make sure FFmpeg is installed
+
+Check installation:
+
+ffmpeg -version
+
+If FFmpeg is not installed, download it from:
+https://ffmpeg.org/download.html
+
+6. Create a .env file in the project root and add the following variables
+
+SUPABASE_URL=your_supabase_url
+SUPABASE_KEY=your_supabase_key
+OPENROUTER_API_KEY=your_openrouter_api_key
+
+7. Run the backend server
+
+uvicorn 1:app --reload
+
+8. Open the API in your browser
+
+http://127.0.0.1:8000
+
+API documentation is available at:
+
+http://127.0.0.1:8000/docs
