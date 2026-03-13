@@ -82,24 +82,23 @@ FFmpeg
 ------------------------------------------------------------------------
 
 ## Project Structure
+## 📁 Project Structure
 
-    MeetInsight/
-    │
-    ├── frontend/              # Frontend interface (HTML, CSS, JavaScript)
-    │
-    ├── 1.py                   # Main FastAPI backend application
-    │
-    ├── requirements.txt       # Python dependencies
-    │
-    ├── .env                   # Environment variables (API keys, Supabase config)
-    │
-    ├── .gitignore             # Files ignored by Git (venv, cache, etc.)
-    │
-    ├── README.md              # Project documentation
-    │
-    └── venv/                  # Python virtual environment (not pushed to GitHub)
-
-------------------------------------------------------------------------
+MeetInsight/
+│
+├── frontend/                # Frontend interface (HTML, CSS, JavaScript)
+│
+├── 1.py                     # Main FastAPI backend application
+│
+├── requirements.txt         # Python dependencies
+│
+├── .env                     # Environment variables (API keys, Supabase config)
+│
+├── .gitignore               # Files ignored by Git (venv, cache, etc.)
+│
+├── README.md                # Project documentation
+│
+└── venv/                    # Python virtual environment (not pushed to GitHub)
 
 # Setup Instructions
 
