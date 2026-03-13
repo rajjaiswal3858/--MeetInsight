@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# MeetInsight --- AI Meeting Assistant
+# MeetInsight -- AI Meeting Assistant
 
 MeetInsight is an AI-powered meeting assistant that processes meeting
 audio, converts it into structured text, generates semantic embeddings,
@@ -12,67 +11,6 @@ searchable knowledge.
 MeetInsight is designed to run locally and demonstrates an end-to-end AI
 pipeline including audio processing, transcription, embedding
 generation, vector storage, and retrieval-augmented generation.
-=======
-# 🎙️ MeetInsight – AI Meeting Assistant
-
-MeetInsight is an AI-powered meeting assistant that processes meeting audio, converts it into text, stores semantic embeddings, and allows intelligent question answering based on the meeting transcript.
-
-It combines speech recognition, vector search, and LLM reasoning to make meeting information searchable and interactive.
-
----
-
-# 🚀 Features
-
-- 🎤 Audio upload API
-- 🔄 Audio conversion (WEBM → MP3/WAV)
-- 📝 Speech transcription using **Faster-Whisper**
-- 🧑‍🤝‍🧑 Speaker voice embedding using **Resemblyzer**
-- ✂️ Intelligent text chunking
-- 🔢 Semantic vector embeddings
-- 🗄️ Storage in **Supabase vector database**
-- 🔍 Hybrid search (Vector search + Keyword search)
-- 🧠 Reranking of retrieved results
-- 🤖 Retrieval-Augmented Generation (RAG)
-- ❓ AI-powered question answering from meetings
-
----
-
-# 🧠 How It Works
-
-MeetInsight processes meeting audio and converts it into structured knowledge that can be queried using natural language.
-
----
-
-# 🧰 Tech Stack
-
-Backend
-- FastAPI
-- Python
-
-AI / ML
-- Faster-Whisper
-- Sentence Transformers
-- Resemblyzer
-
-Database
-- Supabase
-- pgvector
-
-AI Models
-- OpenRouter / OpenAI
-
-Frontend
-- HTML
-- CSS
-- JavaScript
-
-Tools
-- FFmpeg
-
----
-
-## Run the Project
->>>>>>> fdd452e8d2055bd37f32177a675086ef35555aab
 
 ------------------------------------------------------------------------
 
@@ -227,7 +165,6 @@ Create a `.env` file in the project root:
 
 ------------------------------------------------------------------------
 
-<<<<<<< HEAD
 ## 6. Run the Backend Server
 
     uvicorn app:app --reload
@@ -351,51 +288,3 @@ Processing:
 -   Retrieval-Augmented Generation architecture
 -   Integration of speech recognition, embeddings, and LLM reasoning
 -   Real-time semantic search over meeting transcripts
-=======
-http://127.0.0.1:8000
-
-
-
-
-## 🚀 Project Flow
-
-MeetInsight processes meeting audio and allows users to ask questions based on the meeting content.
-
-### 🔊 1. Audio Recording / Upload
-Meeting audio is recorded from the frontend and sent to the backend server.
-
-### 🎧 2. Audio Conversion
-The received audio is converted into the required format using **FFmpeg**.
-
-### 📝 3. Speech Transcription
-**Faster-Whisper** converts the speech from the audio into text.
-
-### 🧑‍🤝‍🧑 4. Speaker Processing
-**Resemblyzer** generates voice embeddings to analyze speaker characteristics.
-
-### ✂️ 5. Text Chunking
-The transcript is divided into smaller chunks for efficient processing.
-
-### 🔢 6. Vector Embedding
-**Sentence Transformers** convert text chunks into vector embeddings.
-
-### 🗄️ 7. Storage
-Embeddings and transcript chunks are stored in a **Supabase vector database**.
-
-### 🔍 8. Retrieval
-When a user asks a question, the system retrieves relevant chunks using **vector similarity + keyword search**.
-
-### 🤖 9. AI Response
-The retrieved context is sent to an **LLM via OpenRouter** to generate an intelligent answer.
-
-### ✅ Final Output
-The system returns an **AI-generated answer based on the meeting transcript**.
-
-
-🎤 Audio → 📝 Whisper → ✂️ Chunking → 🔢 Embeddings → 🗄️ Supabase → 🔍 Retrieval → 🤖 LLM → ✅ Answer
-
-
-
-
-
->>>>>>> fdd452e8d2055bd37f32177a675086ef35555aab
