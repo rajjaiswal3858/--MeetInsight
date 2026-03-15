@@ -45,23 +45,23 @@ A full-stack AI application that records meetings in real time via a Chrome Exte
 ```
 ┌──────────────────────────────────────────────────────────────────┐
 │                     Chrome Extension (Frontend)                  │
-│  Mic + Tab Audio Capture → WebM Recording → Upload to API       │
+│  Mic + Tab Audio Capture → WebM Recording → Upload to API        │
 └──────────────────────────┬───────────────────────────────────────┘
                            │  POST /audio
                            ▼
 ┌──────────────────────────────────────────────────────────────────┐
-│                     FastAPI Backend (Python)                      │
+│                     FastAPI Backend (Python)                     │
 │                                                                  │
-│  ┌─────────────┐  ┌──────────────────┐  ┌───────────────────┐   │
-│  │   FFmpeg     │→ │  Faster-Whisper  │→ │   Resemblyzer     │   │
-│  │ WEBM → WAV  │  │  Transcription   │  │ Speaker Embedding │   │
-│  └─────────────┘  └──────────────────┘  └───────────────────┘   │
+│  ┌─────────────┐  ┌──────────────────┐  ┌───────────────────┐    │
+│  │   FFmpeg     │→│  Faster-Whisper  │→ │   Resemblyzer     │    │
+│  │ WEBM → WAV  │  │  Transcription   │  │ Speaker Embedding │    │
+│  └─────────────┘  └──────────────────┘  └───────────────────┘    │
 │          │                                                       │
 │          ▼                                                       │
-│  ┌─────────────────┐  ┌──────────────────────┐                  │
-│  │ Text Chunking   │→ │ Sentence Transformers │                  │
-│  │ (sliding window) │  │ (all-MiniLM-L6-v2)   │                  │
-│  └─────────────────┘  └──────────┬───────────┘                  │
+│  ┌─────────────────┐  ┌──────────────────────┐                   │
+│  │ Text Chunking   │→ │ Sentence Transformers│                   │
+│  │ (sliding window)│  │ (all-MiniLM-L6-v2)   │                   │
+│  └─────────────────┘  └──────────┬───────────┘                   │
 │                                  │                               │
 │                                  ▼                               │
 │                    ┌──────────────────────────┐                  │
@@ -80,7 +80,7 @@ A full-stack AI application that records meetings in real time via a Chrome Exte
                           │
                           ▼
               ┌────────────────────────┐
-              │   GPT-4o-mini (LLM)   │
+              │   GPT-4o-mini (LLM)    │
               │  via OpenRouter API    │
               └───────────┬────────────┘
                           │
